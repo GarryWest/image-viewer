@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles */
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.header {
+	width: 98%;
+	margin: 20px auto 0px;
+	border: solid black 2px;
+}
+
+.hero
+{
+	padding-top: 2%;
+	height: 100px;
+	text-align: center;
+}
+.text {
+	padding-top: 22px;
+	text-align: center;
+	font: 300 16px/22px "Comic Sans MS", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.logo {
+	height: 230	px;
+	text-align: center;
+}
+
+.logo img {
+  display: inline-block;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+.img {
+  height:}
+
+.hero, .text {
+  margin: 0 auto;
+  width: 100%;
+}	
+
+.row {
+	text-align: center;
+	margin-bottom: 22px;
+}
+
+.row input {
+	margin-right: 20px;
+}
+
+.col-1-4 {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+.warning {
+  color: red;
+  background-color: yellow;
+  border: solid black 2px;
+  padding: 2px;
+}
+
+/* Image Animations */
+.needTag-add {
+  -webkit-animation:5s needTag-on;
+  animation:5s needTag-on;
+}
+
+@keyframes needTag-on {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes needTag-on {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;
+  }
+}
+
+.needTag-remove {
+  -webkit-animation:5s needTag-off;
+  animation:5s needTag-off;
+}
+
+.needTag {
+  opacity:0;
+}
+
+@keyframes needTag-off {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes needTag-off {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+
+/* Blue Animations */
+
+.blue-animation.shaded-add {
+  -webkit-animation:5s blue-shade-on;
+  animation:5s blue-shade-on;
+}
+
+@keyframes blue-shade-on {
+  from {
+    background:white;
+  }
+  to {
+    background:blue;
+  }
+}
+
+@-webkit-keyframes blue-shade-on {
+  from {
+    background:white;
+  }
+  to {
+    background:blue;
+  }
+}
+
+.blue-animation.shaded-remove {
+  -webkit-animation:5s blue-shade-off;
+  animation:5s blue-shade-off;
+}
+
+.blue-animation.shaded {
+  background:blue;
+}
+
+@keyframes blue-shade-off {
+  from {
+    background:blue;
+  }
+  to {
+    background:white;
+  }
+}
+
+@-webkit-keyframes blue-shade-off {
+  from {
+    background:blue;
+  }
+  to {
+    background:white;
+  }
+}
+
+/* Red Animations */
+
+.red-animation.shaded-add {
+  -webkit-animation:5s red-shade-on;
+  animation:5s red-shade-on;
+}
+
+@keyframes red-shade-on {
+  from {
+    background:white;
+  }
+  to {
+    background:red;
+  }
+}
+
+@-webkit-keyframes red-shade-on {
+  from {
+    background:white;
+  }
+  to {
+    background:red;
+  }
+}
+
+.red-animation.shaded-remove {
+  -webkit-animation:5s red-shade-off;
+  animation:5s red-shade-off;
+}
+
+.red-animation.shaded {
+  background:red;
+}
+
+@keyframes red-shade-off {
+  from {
+    background:red;
+  }
+  to {
+    background:white;
+  }
+}
+
+@-webkit-keyframes red-shade-off {
+  from {
+    background:red;
+  }
+  to {
+    background:white;
+  }
+}
